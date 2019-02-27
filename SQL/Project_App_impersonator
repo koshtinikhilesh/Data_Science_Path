@@ -1,0 +1,53 @@
+Project: App impersonator
+
+
+
+Think about your favorite apps, and pick one that stores your data- like a game that stores scores, an app that lets you post updates, etc. Now in this project, you're going to imagine that the app stores your data in a SQL database (which is pretty likely!), and write SQL statements that might look like their own SQL.
+CREATE a table to store the data.
+INSERT a few example rows in the table.
+Use an UPDATE to emulate what happens when you edit data in the app.
+Use a DELETE to emulate what happens when you delete data in the app.
+
+
+Ans;--
+/* What does the app's SQL look like? */
+
+CREATE TABLE app_data(
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+name TEXT,
+review INTEGER,
+location TEXT,
+usetime INTEGER
+);
+
+SELECT * from app_data;
+
+/* Adding values into the database */
+
+INSERT INTO app_data VALUES(1,'david',5,'London',520);
+
+INSERT INTO app_data VALUES(2,'hawking',3,'British Columbia',600);
+INSERT INTO app_data VALUES(3,'stephen',2,'Paris',780);
+INSERT INTO app_data VALUES(4,'Harry',5,'Boston',500);
+INSERT INTO app_data VALUES(5,'Harison',4,'India',560);
+INSERT INTO app_data VALUES(6,'davidson',5,'London',520);
+
+
+SELECT * FROM app_data;
+SELECT * FROM app_data GROUP BY location;
+
+
+/* Update the values from david to Wisley*/
+UPDATE  app_data SET name='Wisley' WHERE name='david';
+SELECT * FROM app_data;
+
+/* Delete the row contain name= 'davidson' */ 
+DELETE FROM app_data WHERE name='davidson';
+SELECT * FROM app_data;
+
+/* Add extra column as 'regular user' */
+ALTER TABLE app_data ADD regular_user TEXT default 'unknown';
+SELECT * FROM app_data;
+INSERT INTO app_data VALUES(6, 'Rahols', 4,'India',730, 'yes');
+SELECT * from app_data
+
