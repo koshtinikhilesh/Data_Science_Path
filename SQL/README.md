@@ -12,11 +12,11 @@ https://www.theschool.ai/courses/data-lit/
 
 SQL:-
 
-(1) clothing_alteration
+(1) clothing_alteration.txt
 
 (2) Design_A_Store.txt
 
-(3) dynamic_document
+(3) dynamic_document.txt
 
 (4) Khan_Academy_SQL1.txt
 
@@ -28,18 +28,15 @@ SQL:-
 
 (8) Sequels_in_Sql.txt
 
-(9) wordiest_author
+(9) wordiest_author.txt
 
-(10) Karoake_challenge
+(10) Karoake_challenge.txt
 
-(11) Hobbies_Data
+(11) Hobbies_Data.txt
 
-(12) grade_book
+(12) grade_book.txt
 
-(13)  friend_book
+(13) friend_book.txt
 
-### Data Analysis
-
-(1) NLTK/REGEX cleaning of data.
 
 
