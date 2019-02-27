@@ -1,0 +1,38 @@
+Spin-off of "Project: Design a store database"
+
+
+CREATE TABLE store_data (
+id INTEGER PRIMARY KEY,
+item TEXT,
+price INTEGER,
+quantity INTEGER,
+branded TEXT
+);
+INSERT into store_data VALUES(1, 'BIKES', 100010,120, 'YES');
+INSERT into store_data VALUES(2, 'MOTORCYCLE', 100000,12, 'NO');
+INSERT into store_data VALUES(3, 'CAR', 135000,12, 'YES');
+INSERT into store_data VALUES(4, 'TRUCK', 110000,20, 'NO');
+INSERT into store_data VALUES(5, 'TRACTOR', 125000,10, 'YES');
+INSERT into store_data VALUES(6, 'E-Car', 145000,19, 'NO');
+INSERT into store_data VALUES(7, 'E-BIKE', 155000,20, 'YES');
+INSERT into store_data VALUES(8, 'E-TRUCK', 165000,31, 'YES');
+INSERT into store_data VALUES(9, 'E-TRACTOR', 110000,40, 'YES');
+INSERT into store_data VALUES(10, 'SUV', 125000,5, 'NO');
+INSERT into store_data VALUES(11, 'Sedan', 110000,12, 'YES');
+INSERT into store_data VALUES(12, 'E-Cycle', 125000,120, 'YES');
+
+
+INSERT into store_data VALUES(13, 'Watch', 125000,12, 'YES');
+INSERT into store_data VALUES(14, 'E-Jeans', 145000,12, 'YES');
+INSERT into store_data VALUES(15, 'Shirts', 125000,20, 'YES');
+
+SELECT SUM(price) FROM store_data
+GROUP BY price;
+
+SELECT MAX(price) FROM store_data;
+
+SELECT SUM(price) FROM store_data
+
+
+
+

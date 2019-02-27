@@ -1,0 +1,66 @@
+Khan Academy solution of SQL:-
+https://www.khanacademy.org/computing/computer-programming/sql
+
+
+What are your favorite books? You can make a database table to store them in! In this first step, create a table to store your list of books. It should have columns for id, name, and rating.
+Now, add three of your favorite books into the table.
+Ans:-
+
+
+/*
+Create a database for English Novels
+*/
+CREATE TABLE novels( 
+id INTEGER PRIMARY KEY,
+name TEXT,
+rating INTEGER);
+
+INSERT INTO novels VALUES (1,'Sherlock Holmes', 5);
+INSERT INTO novels VALUES (2,'Sherlock Holmes2', 3.5);
+INSERT INTO novels VALUES (3,'Sherlock Holmes3', 4);
+SELECT * FROM novels;
+SELECT * FROM novels;
+SELECT * FROM novels;
+SELECT * FROM novels;
+SELECT * FROM novels;
+
+
+
+
+
+
+(2) This database contains an incomplete list of box office hits and their release year. In this challenge, you're going to get the results back out of the database in different ways! In this first step, just select all the movies. Now, add a second query after the first, that retrieves only the movies that were released in the year 2000 or later, not before. Sort the results so that the earlier movies are listed first. You should have 2 SELECT statements after this step.
+
+
+Ans:-
+
+
+ CREATE TABLE movies (id INTEGER PRIMARY KEY, name TEXT, release_year INTEGER);
+INSERT INTO movies VALUES (1, "Avatar", 2009);
+INSERT INTO movies VALUES (2, "Titanic", 1997);
+INSERT INTO movies VALUES (3, "Star Wars: Episode IV - A New Hope", 1977);
+INSERT INTO movies VALUES (4, "Shrek 2", 2004);
+INSERT INTO movies VALUES (5, "The Lion King", 1994);
+INSERT INTO movies VALUES (6, "Disney's Up", 2009);
+SELECT * FROM movies;
+SELECT * FROM movies WHERE release_year>2000
+ORDER BY release_year
+ 
+
+(2) todo list database sets
+
+Here's a table containing a TODO list with the number of minutes it will take to complete each item. Insert another item to your todo list with the estimated minutes it will take. Select the SUM of minutes it will take to do all of the items on your TODO list. You should only have one SELECT statement.
+
+
+Ans:--
+
+
+CREATE TABLE todo_list (id INTEGER PRIMARY KEY, item TEXT, minutes INTEGER);
+INSERT INTO todo_list VALUES (1, "Wash the dishes", 15);
+INSERT INTO todo_list VALUES (2, "vacuuming", 20);
+INSERT INTO todo_list VALUES (3, "Learn some stuff on KA", 30);
+INSERT INTO todo_list VALUES (4, "SQL learning", 30);
+
+SELECT SUM(minutes) FROM todo_list
+
+
