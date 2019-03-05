@@ -10,4 +10,4 @@ Week1:-
 
 ### Data Analysis
 
-(1) NLTK/REGEX cleaning of data.
+(1) nltk/regex cleaning of data.
